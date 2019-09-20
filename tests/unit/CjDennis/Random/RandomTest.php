@@ -21,4 +21,8 @@ class RandomTest extends \Codeception\Test\Unit {
   public function testShouldReturnATwoHexDigitString() {
     $this->assertRegExp('/^[\dA-F]{2}$/i', Random::random_hex_bytes(1));
   }
+
+  public function testShouldReturnASixteenHexDigitString() {
+    $this->assertRegExp('/^[\dA-F]{16}$/i', Random::random_hex_bytes(8));
+  }
 }
