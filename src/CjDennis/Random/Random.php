@@ -8,6 +8,6 @@ class Random {
   }
 
   public static function random_hex_bytes(int $count): string {
-    return '42';
+    return bin2hex(openssl_random_pseudo_bytes($count));
   }
 }
