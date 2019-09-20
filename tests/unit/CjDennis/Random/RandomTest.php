@@ -17,4 +17,8 @@ class RandomTest extends \Codeception\Test\Unit {
   public function testShouldReturnARandomSixteenBitInteger() {
     $this->assertTrue(is_int(Random::random_int()));
   }
+
+  public function testShouldReturnATwoHexDigitString() {
+    $this->assertRegExp('/^[\dA-F]{2}$/i', Random::random_hex_bytes(1));
+  }
 }
