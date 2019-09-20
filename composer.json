@@ -1,0 +1,8 @@
+{
+    "name": "cjdennis/random",
+    "description": "Formatted random number generator",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {}
+}
