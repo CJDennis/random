@@ -9,5 +9,8 @@
     },
     "autoload": {
         "psr-4": {"CjDennis\\Random\\": "src/CjDennis/Random/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"CjDennis\\Random\\": "tests/unit/CjDennis/Random/"}
     }
 }
