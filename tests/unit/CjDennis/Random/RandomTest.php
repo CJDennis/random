@@ -1,9 +1,12 @@
 <?php
 namespace CjDennis\Random;
 
-class RandomTest extends \Codeception\Test\Unit {
+use Codeception\Test\Unit;
+use UnitTester;
+
+class RandomTest extends Unit {
   /**
-   * @var \UnitTester
+   * @var UnitTester
    */
   protected $tester;
 
@@ -15,7 +18,7 @@ class RandomTest extends \Codeception\Test\Unit {
 
   // tests
   public function testShouldReturnARandomSixteenBitInteger() {
-    $this->assertTrue(is_int(Random::random_int()));
+    $this->assertTrue(is_int(Random::random_short_int()));
   }
 
   public function testShouldReturnATwoHexDigitString() {
