@@ -25,4 +25,9 @@ class RandomTest extends \Codeception\Test\Unit {
   public function testShouldReturnASixteenHexDigitString() {
     $this->assertRegExp('/^[\dA-F]{16}$/i', Random::random_hex_bytes(8));
   }
+
+  public function testShouldReturnASixteenZeroString() {
+    RandomSeam::set_bytes("\x00\x00\x00\x00\x00\x00\x00\x00");
+    $this->assertSame('0000000000000000', RandomSeam::random_hex_bytes(8));
+  }
 }
