@@ -1,5 +1,5 @@
 <?php
-namespace CjDennis\Random;
+namespace CJDennis\Random;
 
 class RandomSeam extends Random {
   protected static $bytes = '';

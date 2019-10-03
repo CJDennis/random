@@ -8,9 +8,9 @@
         "ext-openssl": "*"
     },
     "autoload": {
-        "psr-4": {"CjDennis\\Random\\": "src/CjDennis/Random/"}
+        "psr-4": {"CJDennis\\Random\\": "src/CJDennis/Random/"}
     },
     "autoload-dev": {
-        "psr-4": {"CjDennis\\Random\\": "tests/unit/CjDennis/Random/"}
+        "psr-4": {"CJDennis\\Random\\": "tests/unit/CJDennis/Random/"}
     }
 }

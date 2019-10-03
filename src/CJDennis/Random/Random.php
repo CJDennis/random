@@ -1,5 +1,5 @@
 <?php
-namespace CjDennis\Random;
+namespace CJDennis\Random;
 
 class Random {
   public static function random_int() {

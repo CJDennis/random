@@ -1,5 +1,5 @@
 <?php
-namespace CjDennis\Random;
+namespace CJDennis\Random;
 
 use Codeception\Test\Unit;
 use UnitTester;
