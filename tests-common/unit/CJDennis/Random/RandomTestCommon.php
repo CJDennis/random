@@ -2,10 +2,10 @@
 namespace CJDennis\Random;
 
 trait RandomTestCommon {
-  protected function _before() {
+  protected function common_before() {
   }
 
-  protected function _after() {
+  protected function common_after() {
   }
 
   // tests

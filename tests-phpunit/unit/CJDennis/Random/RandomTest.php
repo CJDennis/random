@@ -10,10 +10,10 @@ class RandomTest extends TestCase {
   use RandomTestCommon;
 
   protected function setUp(): void {
-    $this->_before();
+    $this->common_before();
   }
 
   protected function tearDown(): void {
-    $this->_after();
+    $this->common_after();
   }
 }
