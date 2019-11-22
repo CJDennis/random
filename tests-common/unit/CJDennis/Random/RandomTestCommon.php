@@ -1,15 +1,7 @@
 <?php
 namespace CJDennis\Random;
 
-use Codeception\Test\Unit;
-use UnitTester;
-
-class RandomTest extends Unit {
-  /**
-   * @var UnitTester
-   */
-  protected $tester;
-
+trait RandomTestCommon {
   protected function _before() {
   }
 

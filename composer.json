@@ -11,7 +11,11 @@
         "psr-4": {"CJDennis\\Random\\": "src/CJDennis/Random/"}
     },
     "autoload-dev": {
-        "psr-4": {"CJDennis\\Random\\": "tests/unit/CJDennis/Random/"}
+        "psr-4": {"CJDennis\\Random\\": "tests-common/unit/CJDennis/Random/"}
     },
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev": {
+        "codeception/codeception": "^3.1",
+        "infection/infection": "^0.14.2"
+    }
 }
