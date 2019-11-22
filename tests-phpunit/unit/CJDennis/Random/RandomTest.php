@@ -7,6 +7,8 @@ use PHPUnit\Framework\TestCase;
  * @covers \CJDennis\Random\Random
  */
 class RandomTest extends TestCase {
+  use RandomTestCommon;
+
   protected function setUp(): void {
     $this->_before();
   }
@@ -14,6 +16,4 @@ class RandomTest extends TestCase {
   protected function tearDown(): void {
     $this->_after();
   }
-
-  use RandomTestCommon;
 }
