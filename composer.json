@@ -3,7 +3,7 @@
     "description": "Formatted random number generator",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "ext-openssl": "*"
     },
@@ -12,5 +12,6 @@
     },
     "autoload-dev": {
         "psr-4": {"CJDennis\\Random\\": "tests/unit/CJDennis/Random/"}
-    }
+    },
+    "prefer-stable": true
 }
