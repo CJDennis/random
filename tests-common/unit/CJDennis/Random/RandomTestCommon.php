@@ -3,6 +3,7 @@ namespace CJDennis\Random;
 
 trait RandomTestCommon {
   protected function common_before() {
+    RandomSeam::clear_bytes();
   }
 
   protected function common_after() {
@@ -32,8 +33,13 @@ trait RandomTestCommon {
     $this->assertSame('0000000000000000', RandomSeam::random_hex_bytes(8));
   }
 
-  public function testShouldTheLargestPossibleSixteenBitInteger() {
+  public function testShouldReturnTheLargestPossibleSixteenBitInteger() {
     RandomSeam::set_bytes("\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF");
     $this->assertSame(0xFFFF, RandomSeam::random_short_int());
+  }
+
+  public function testShouldReturnALargeRandomSixteenBitInteger() {
+    RandomSeam::set_bytes("\xFF");
+    $this->assertGreaterThanOrEqual(0xFF00, RandomSeam::random_short_int());
   }
 }

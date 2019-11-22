@@ -5,6 +5,10 @@ class RandomSeam extends Random {
   protected static $bytes = '';
   protected static $repeat_bytes = false;
 
+  public static function clear_bytes() {
+    self::$bytes = '';
+  }
+
   public static function set_bytes(string $bytes) {
     self::$bytes .= $bytes;
   }
@@ -18,7 +22,6 @@ class RandomSeam extends Random {
   }
 
   protected static function random_bytes(int $count) {
-    parent::random_bytes($count);
     if (static::$bytes === '') {
       $random_bytes = parent::random_bytes($count);
     }
