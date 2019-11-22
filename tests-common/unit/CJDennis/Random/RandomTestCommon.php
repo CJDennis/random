@@ -31,4 +31,9 @@ trait RandomTestCommon {
     RandomSeam::set_bytes("\x00\x00\x00\x00\x00\x00\x00\x00");
     $this->assertSame('0000000000000000', RandomSeam::random_hex_bytes(8));
   }
+
+  public function testShouldTheLargestPossibleSixteenBitInteger() {
+    RandomSeam::set_bytes("\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF");
+    $this->assertSame(0xFFFF, RandomSeam::random_short_int());
+  }
 }

@@ -18,6 +18,7 @@ class RandomSeam extends Random {
   }
 
   protected static function random_bytes(int $count) {
+    parent::random_bytes($count);
     if (static::$bytes === '') {
       $random_bytes = parent::random_bytes($count);
     }
