@@ -16,4 +16,16 @@ class RandomTest extends TestCase {
   protected function tearDown(): void {
     $this->common_after();
   }
+
+  protected function set_dummy_deprecation_handler() {
+  }
+
+  protected function clear_dummy_deprecation_handler() {
+  }
+
+  protected function set_deprecation_escalation_handler() {
+  }
+
+  protected function set_deprecation_ignoring_handler() {
+  }
 }
