@@ -9,6 +9,12 @@ trait RandomTestCommon {
   }
 
   // tests
+  public function testShouldRaiseADeprecationWarningWhenReturningARandomSixteenBitIntegerUsingTheDeprecatedMethod() {
+    $this->expectDeprecation();
+    $this->expectDeprecationMessage('CJDennis\Random\Random::random_int() is deprecated. Use CJDennis\Random\Random::random_short_int() instead.');
+    $this->assertTrue(is_int(Random::random_int()));
+  }
+
   public function testShouldReturnARandomSixteenBitInteger() {
     $this->assertTrue(is_int(Random::random_short_int()));
   }
